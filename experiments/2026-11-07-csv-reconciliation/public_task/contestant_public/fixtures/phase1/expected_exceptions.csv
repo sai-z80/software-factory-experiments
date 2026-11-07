@@ -1,0 +1,6 @@
+order_id,exception_type,normalized_invoice_date,amount_delta
+0002,missing_invoice,,
+0003,amount_mismatch,2024-01-03,1.25
+0004,late_billing,2024-02-01,0.00
+0005,amount_mismatch,2024-02-02,-1.00
+0005,late_billing,2024-02-02,-1.00

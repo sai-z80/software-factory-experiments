@@ -1,0 +1,37 @@
+{
+  "kind": "Local public-source publication smoke, not a new model trial",
+  "all4_public_suites_pass": true,
+  "pass_observations": 14,
+  "runs": {
+    "p1-b": {
+      "passed": 3,
+      "exit_code": 0,
+      "timeout": false,
+      "source_sha256": "a9b1d3e0da8da2b66d7179a3856ace7362240602ab7f3438e35bfb876240aeaf"
+    },
+    "p1-c": {
+      "passed": 3,
+      "exit_code": 0,
+      "timeout": false,
+      "source_sha256": "72f0e4b0063089e0c2cd79a22bf2d046c98658f5575ad1c4e3e87eb748a5cc60"
+    },
+    "p2-b": {
+      "passed": 4,
+      "exit_code": 0,
+      "timeout": false,
+      "source_sha256": "ad4df0e9a1297983556b0eb7f2af4c3072f4e0572b38f381e418504005ec55df"
+    },
+    "p2-c": {
+      "passed": 4,
+      "exit_code": 0,
+      "timeout": false,
+      "source_sha256": "65f532099499f7b9aea68b71c4a99125d0696386cb743b5bddad902e5a007c28"
+    }
+  },
+  "source_hashes_preserved": true,
+  "initial_starter_excludes_implementation_and_future_format": true,
+  "later_payload_separate": true,
+  "private_oracles_not_published": true,
+  "paid_model_calls": 0,
+  "at_GMT": "2026-11-07 21:20:34 GMT"
+}
