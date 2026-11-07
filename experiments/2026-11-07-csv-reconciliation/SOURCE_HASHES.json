@@ -1,0 +1,28 @@
+{
+  "files": {
+    "source_diff_c.patch": "d0c7c09642831d1b274829ea1f3016992220894cb91051ed37fd83a039e1ce57",
+    "README.md": "09b301f9ace527297685bed3a9d8622e63391f0b239cc14c345a8ba1fd24e196",
+    "REPORT.md": "c3c8a986a27a72f15d1704dfb3ea41811276431bebe65defeb6f4f0713036bfa",
+    "PUBLIC_VALIDATION.json": "2613621a31ae4d6d93a8ff9fbd8aad7b9b7674a431592471ff59fe2fbca9aa6a",
+    "source_diff_b.patch": "abd4496fe0fe53983166b97ca2ce8248bd7a8dab8ed9d5bd10d04352b477855c",
+    "results.summary.json": "bd25a7a6e810d210540ed520ca2ea520a5d18615a54a78670a1aad50f95a8836",
+    "public_task/contestant_public/test_reconcile.py": "c1d177e44fcf8fd37afc52399947ea5b1ffac025ada035d40899e0917b983c23",
+    "public_task/contestant_public/BRIEF.md": "994d61cf133a4fddee11805da748cdf8267884ce33c794e98e5f459e3e2a1fce",
+    "public_task/contestant_public/invoices.csv": "c5af8a16e4ddf711bb6d0f14e15aff6b2d74c5b5d2413b740ee8d5d2f316bf53",
+    "public_task/contestant_public/orders.csv": "cc2ec796ddb54ade459ff300fa775bfad1c39602e68e313813207c19d63f6658",
+    "public_task/contestant_public/expected_exceptions.csv": "4a07eed6a87757ad11c5a5f52b91af864bc8404982a6bc9c2c5b91f8ff6b8064",
+    "public_task/release_phase2/TRIGGER.txt": "a998be3409c7e2f94a443e35899e9351bca9dcbcb80cff485f31ccca3fd5cc15",
+    "public_task/release_phase2/CHANGE.md": "f8565e552671c3f1572d69df8d281969f69c56c803df0d730b47d2743384aeae",
+    "public_task/release_phase2/test_reconcile.py": "533ba757fcfa5ffd5dafee4bd49265eae84cf6ebb4da62a8660061bf5eeb84c1",
+    "public_task/release_phase2/invoices.csv": "bccd78b023b766387f8f81ac95cd0bd1fb84471080c4d112dba94b97c5834cf5",
+    "public_task/release_phase2/expected_exceptions.csv": "4a07eed6a87757ad11c5a5f52b91af864bc8404982a6bc9c2c5b91f8ff6b8064",
+    "public_task/contestant_public/fixtures/phase1/invoices.csv": "c5af8a16e4ddf711bb6d0f14e15aff6b2d74c5b5d2413b740ee8d5d2f316bf53",
+    "public_task/contestant_public/fixtures/phase1/orders.csv": "cc2ec796ddb54ade459ff300fa775bfad1c39602e68e313813207c19d63f6658",
+    "public_task/contestant_public/fixtures/phase1/expected_exceptions.csv": "4a07eed6a87757ad11c5a5f52b91af864bc8404982a6bc9c2c5b91f8ff6b8064",
+    "implementations/p1-b/reconcile.py": "a9b1d3e0da8da2b66d7179a3856ace7362240602ab7f3438e35bfb876240aeaf",
+    "implementations/p1-c/reconcile.py": "72f0e4b0063089e0c2cd79a22bf2d046c98658f5575ad1c4e3e87eb748a5cc60",
+    "implementations/p2-c/reconcile.py": "65f532099499f7b9aea68b71c4a99125d0696386cb743b5bddad902e5a007c28",
+    "implementations/p2-b/reconcile.py": "ad4df0e9a1297983556b0eb7f2af4c3072f4e0572b38f381e418504005ec55df"
+  },
+  "note": "Public files only; exact original accepted implementation hashes retained. Private evaluator/oracles intentionally absent."
+}

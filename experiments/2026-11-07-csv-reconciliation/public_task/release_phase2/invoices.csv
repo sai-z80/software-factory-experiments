@@ -1,0 +1,8 @@
+Billing tool export v2
+Generated for reconciliation study
+invoice_id,order_id,invoice_date,billed_amount
+I1,0001,02/01/2024,10.00
+I3,0003,03/01/2024,31.25
+I4,0004,01/02/2024,40.00
+I5,0005,02/02/2024,49.00
+I10,0010,31/01/2024,60.00

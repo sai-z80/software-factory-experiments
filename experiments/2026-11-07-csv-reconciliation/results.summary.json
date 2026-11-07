@@ -1,0 +1,390 @@
+{
+  "study": "CSV reconciliation lifecycle \u2014 one paired feasibility trial",
+  "date_GMT": "2026-11-07",
+  "model": {
+    "model": "anthropic/claude-sonnet-4.6",
+    "provider": "anthropic",
+    "temperature": 0,
+    "reasoning_effort": "none",
+    "max_completion_tokens": 4096
+  },
+  "arms": {
+    "B": "Direct host agent",
+    "C": "Same host agent plus actual8090 connector-assisted artifact workflow, not native8090 coding product"
+  },
+  "stage_caps": {
+    "model_cost_usd": 2,
+    "agent_wall_seconds_including_bridge": 600,
+    "model_turns": 60
+  },
+  "order": {
+    "phase1": [
+      "C",
+      "B"
+    ],
+    "phase2": [
+      "B",
+      "C"
+    ]
+  },
+  "stages": {
+    "p1-c": {
+      "accepted": true,
+      "classification": "PASS",
+      "termination": "finished",
+      "public_pass": 3,
+      "public_exit_code": 0,
+      "private_expected": 16,
+      "private_counts": {
+        "pass": 16,
+        "assertion_fail": 0,
+        "error": 0,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "source_input_integrity": true,
+      "source_sha256": "72f0e4b0063089e0c2cd79a22bf2d046c98658f5575ad1c4e3e87eb748a5cc60",
+      "agent_wall_s": 389.297,
+      "bridge_wait_s": 184.584,
+      "evaluation_wall_s": 0.75065,
+      "agent_plus_evaluation_s": 390.04766,
+      "wall_to_independent_score_s_from_file_receipts": 413.951,
+      "operator_post_model_scoring_gap_s": 23.903,
+      "start_GMT_derived": "2026-11-07 20:00:34 GMT",
+      "scored_GMT": "2026-11-07 20:07:28 GMT",
+      "model_calls": 16,
+      "tool_calls": 23,
+      "api_wait_s": 203.775,
+      "tokens": {
+        "prompt_tokens": 494675,
+        "completion_tokens": 11934,
+        "total_tokens": 506609,
+        "reasoning_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost_usd": "1.663035",
+      "management_involved_model_turns": 11,
+      "management_involved_turn_cost_usd": "1.099311"
+    },
+    "p1-b": {
+      "accepted": true,
+      "classification": "PASS",
+      "termination": "finished",
+      "public_pass": 3,
+      "public_exit_code": 0,
+      "private_expected": 16,
+      "private_counts": {
+        "pass": 16,
+        "assertion_fail": 0,
+        "error": 0,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "source_input_integrity": true,
+      "source_sha256": "a9b1d3e0da8da2b66d7179a3856ace7362240602ab7f3438e35bfb876240aeaf",
+      "agent_wall_s": 48.161,
+      "bridge_wait_s": 0,
+      "evaluation_wall_s": 0.75177,
+      "agent_plus_evaluation_s": 48.91277,
+      "wall_to_independent_score_s_from_file_receipts": 84.836,
+      "operator_post_model_scoring_gap_s": 35.923,
+      "start_GMT_derived": "2026-11-07 20:07:28 GMT",
+      "scored_GMT": "2026-11-07 20:08:53 GMT",
+      "model_calls": 8,
+      "tool_calls": 13,
+      "api_wait_s": 47.402,
+      "tokens": {
+        "prompt_tokens": 35628,
+        "completion_tokens": 2985,
+        "total_tokens": 38613,
+        "reasoning_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost_usd": "0.151659",
+      "management_involved_model_turns": 0,
+      "management_involved_turn_cost_usd": "0"
+    },
+    "p2-b": {
+      "accepted": true,
+      "classification": "PASS",
+      "termination": "finished",
+      "public_pass": 4,
+      "public_exit_code": 0,
+      "private_expected": 32,
+      "private_counts": {
+        "pass": 32,
+        "assertion_fail": 0,
+        "error": 0,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "source_input_integrity": true,
+      "source_sha256": "ad4df0e9a1297983556b0eb7f2af4c3072f4e0572b38f381e418504005ec55df",
+      "agent_wall_s": 59.268,
+      "bridge_wait_s": 0,
+      "evaluation_wall_s": 1.39236,
+      "agent_plus_evaluation_s": 60.66037,
+      "wall_to_independent_score_s_from_file_receipts": 73.273,
+      "operator_post_model_scoring_gap_s": 12.613,
+      "start_GMT_derived": "2026-11-07 20:08:53 GMT",
+      "scored_GMT": "2026-11-07 20:10:07 GMT",
+      "model_calls": 9,
+      "tool_calls": 15,
+      "api_wait_s": 58.427,
+      "tokens": {
+        "prompt_tokens": 49668,
+        "completion_tokens": 3531,
+        "total_tokens": 53199,
+        "reasoning_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost_usd": "0.201969",
+      "management_involved_model_turns": 0,
+      "management_involved_turn_cost_usd": "0"
+    },
+    "p2-c": {
+      "accepted": true,
+      "classification": "PASS",
+      "termination": "finished",
+      "public_pass": 4,
+      "public_exit_code": 0,
+      "private_expected": 32,
+      "private_counts": {
+        "pass": 32,
+        "assertion_fail": 0,
+        "error": 0,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "source_input_integrity": true,
+      "source_sha256": "65f532099499f7b9aea68b71c4a99125d0696386cb743b5bddad902e5a007c28",
+      "agent_wall_s": 509.488,
+      "bridge_wait_s": 328.338,
+      "evaluation_wall_s": 1.25561,
+      "agent_plus_evaluation_s": 510.74362,
+      "wall_to_independent_score_s_from_file_receipts": 521.441,
+      "operator_post_model_scoring_gap_s": 10.697,
+      "start_GMT_derived": "2026-11-07 20:10:07 GMT",
+      "scored_GMT": "2026-11-07 20:18:48 GMT",
+      "model_calls": 18,
+      "tool_calls": 27,
+      "api_wait_s": 179.841,
+      "tokens": {
+        "prompt_tokens": 375840,
+        "completion_tokens": 9643,
+        "total_tokens": 385483,
+        "reasoning_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost_usd": "1.272165",
+      "management_involved_model_turns": 10,
+      "management_involved_turn_cost_usd": "0.745179"
+    }
+  },
+  "counts_note": "110 pass observations =14 visible +96 private across four stages; NOT110 independent cases. The16 original private cases recur in Phase2 for each arm.",
+  "regressions": {
+    "b": {
+      "old_cases": 16,
+      "preserved_passes": 16,
+      "regressions": 0
+    },
+    "c": {
+      "old_cases": 16,
+      "preserved_passes": 16,
+      "regressions": 0
+    }
+  },
+  "repair_transitions_on_all32_cases": {
+    "b": {
+      "baseline_counts": {
+        "pass": 16,
+        "assertion_fail": 0,
+        "error": 16,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "repair_counts": {
+        "pass": 32,
+        "assertion_fail": 0,
+        "error": 0,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "preserved_passes": 16,
+      "nonpass_to_pass": 16,
+      "pass_to_nonpass": 0
+    },
+    "c": {
+      "baseline_counts": {
+        "pass": 16,
+        "assertion_fail": 0,
+        "error": 16,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "repair_counts": {
+        "pass": 32,
+        "assertion_fail": 0,
+        "error": 0,
+        "timeout": 0,
+        "infrastructure_error": 0
+      },
+      "preserved_passes": 16,
+      "nonpass_to_pass": 16,
+      "pass_to_nonpass": 0
+    }
+  },
+  "costs": {
+    "provider_reported_settled_usd": "5.03518838",
+    "qualification_smokes_usd": "1.74636038",
+    "primary_usd": "3.288828",
+    "B_primary_usd": "0.353628",
+    "C_primary_usd": "2.9352",
+    "outstanding_model_reserves_usd": "0",
+    "settled_model_calls": 100,
+    "stage_groups": {
+      "p1-b": {
+        "cost_usd": "0.151659",
+        "settled_calls": 8,
+        "outstanding_usd": "0"
+      },
+      "p1-c": {
+        "cost_usd": "1.663035",
+        "settled_calls": 16,
+        "outstanding_usd": "0"
+      },
+      "p2-b": {
+        "cost_usd": "0.201969",
+        "settled_calls": 9,
+        "outstanding_usd": "0"
+      },
+      "p2-c": {
+        "cost_usd": "1.272165",
+        "settled_calls": 18,
+        "outstanding_usd": "0"
+      },
+      "qual-bounded": {
+        "cost_usd": "1.050600",
+        "settled_calls": 12,
+        "outstanding_usd": "0"
+      },
+      "qual-deepseek": {
+        "cost_usd": "0.01898338",
+        "settled_calls": 9,
+        "outstanding_usd": "0"
+      },
+      "qual-strong": {
+        "cost_usd": "0.653944",
+        "settled_calls": 25,
+        "outstanding_usd": "0"
+      },
+      "smoke-b": {
+        "cost_usd": "0.022833",
+        "settled_calls": 3,
+        "outstanding_usd": "0"
+      }
+    },
+    "platform_invoice_scope": "Existing subscription excluded; no hosted8090 inference invoked; per-CRUD invoice not independently audited"
+  },
+  "all_provider_usage_by_stage": {
+    "p1-b": {
+      "responses": 8,
+      "prompt_tokens": 35628,
+      "completion_tokens": 2985,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0
+    },
+    "p1-c": {
+      "responses": 16,
+      "prompt_tokens": 494675,
+      "completion_tokens": 11934,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0
+    },
+    "p2-b": {
+      "responses": 9,
+      "prompt_tokens": 49668,
+      "completion_tokens": 3531,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0
+    },
+    "p2-c": {
+      "responses": 18,
+      "prompt_tokens": 375840,
+      "completion_tokens": 9643,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0
+    },
+    "qual-bounded": {
+      "responses": 12,
+      "prompt_tokens": 303120,
+      "completion_tokens": 9416,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0
+    },
+    "qual-deepseek": {
+      "responses": 9,
+      "prompt_tokens": 82230,
+      "completion_tokens": 2977,
+      "reasoning_tokens": 0,
+      "cached_tokens": 27136
+    },
+    "qual-strong": {
+      "responses": 25,
+      "prompt_tokens": 702593,
+      "completion_tokens": 22953,
+      "reasoning_tokens": 11266,
+      "cached_tokens": 592640
+    },
+    "smoke-b": {
+      "responses": 3,
+      "prompt_tokens": 4761,
+      "completion_tokens": 570,
+      "reasoning_tokens": 0,
+      "cached_tokens": 0
+    }
+  },
+  "interventions": {
+    "business_hints": 0,
+    "candidate_source_edits": 0,
+    "primary_model_restarts": 0,
+    "generation_replays": 0,
+    "local_scope_safety_interventions": 1,
+    "attended_native_transport_calls": {
+      "phase1_C": 10,
+      "phase2_C": 12
+    }
+  },
+  "validation": {
+    "primary_pass_observations": 110,
+    "primary_assertion_fail_error_timeout_missing": 0,
+    "reference_phase1_pass": 16,
+    "reference_phase2_pass": 32,
+    "mutation_variants_detected": 13,
+    "preprimary_core_files_unchanged": 36,
+    "original_delivered_fingerprints_unchanged": 93
+  },
+  "strict_qualification_deviations": {
+    "identical_Markdown_format": "FAIL_bullet_emphasis_blankline_only_not_words_or_IDs",
+    "final_model_traceability_summary": "NOT_COMPLETED_budget_guard_before_unbilled_turn13"
+  },
+  "timing": {
+    "primary_window_s": 1093.725,
+    "first_primary_start_GMT_derived": "2026-11-07 20:00:34 GMT",
+    "last_primary_scored_GMT": "2026-11-07 20:18:48 GMT",
+    "earliest_saved_paid_request_GMT": "2026-11-07 19:20:31 GMT",
+    "earliest_request_to_final_score_s": 3497.066,
+    "basis": "Agentwall monotonic measured by runner; trigger-to-score derived from result mtime minus agentwall and score mtime, includes actual post-model scoring delay; file timestamp estimates, not additional timer instrumentation. Primary cap includes agentloop and bridge; scoring separate."
+  },
+  "limitations": [
+    "n=1, conditional model selection, small synthetic task and ceiling effects",
+    "Attended bridge waits are not intrinsic8090 compute or speed advantage",
+    "One local scope-safety intervention due to adapter UUID-registry parsing defect; not zero-human/autonomous comparison",
+    "Two native argument validation rejections through simplified schema; corrected with normal tool feedback",
+    "Five native document-edit suggestions remain pending review; no approval claimed",
+    "Phase2 fix work order was created after code/public tests; no causal work-order-planning claim",
+    "Independent own accepted Phase1 baselines differ",
+    "Provider cost is not an audited all-in8090 CRUD invoice",
+    "Private cases, oracles, raw transcripts, private paths, personal data and native project/artifact identifiers are intentionally excluded"
+  ]
+}
